@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arq. Nombre Apellido | Portafolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+<div class="overlay" id="overlay"></div>
+
+<!-- MENÚ LATERAL: edita tus datos aquí -->
+<aside class="drawer" id="drawer">
+  <button class="close-btn" id="closeBtn" aria-label="Cerrar">✕</button>
+  <img class="avatar" src="img/perfil.jpg" alt="Foto del arquitecto" onerror="this.style.background='#444'">
+  <h2>Arq. Christian Ivan Valdivia Lopez</h2>
+  <ul>
+    <li><span>Cédula</span> 000-0000000-0</li>
+    <li><span>Celular</span> <a href="tel:+10000000000">+1 000 000 0000</a></li>
+    <li><span>Correo</span> <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></li>
+    <li><span>Universidad de egreso</span> Universidad Autonoma Metropolitana</li>
+  </ul>
+</aside>
+
+<!-- SLIDER -->
+<header class="hero" id="hero">
+  <div class="slide active" style="--img:url(img/proyecto1.jpg)"><p>Casa Los Pinos</p></div>
+  <div class="slide" style="--img:url(img/proyecto2.jpg)"><p>Edificio Central</p></div>
+  <div class="slide" style="--img:url(img/proyecto3.jpg)"><p>Villa del Lago</p></div>
+  <button class="arrow prev" aria-label="Anterior">‹</button>
+  <button class="arrow next" aria-label="Siguiente">›</button>
+  <div class="dots"></div>
+  <div class="scroll-hint">Desliza ↓</div>
+</header>
+
+<!-- DESTACADOS -->
+<main>
+  <section class="intro reveal">
+    <h1>Arq. Nombre Apellido</h1>
+    <p>Breve descripción profesional: enfoque, años de experiencia y tipo de proyectos.</p>
+  </section>
+
+  <section class="featured">
+    <h2 class="reveal">Proyectos destacados</h2>
+
+    <article class="project reveal from-left">
+      <div class="img" style="--img:url(img/destacado1.jpg)"></div>
+      <div class="text"><h3>Casa Los Pinos</h3><p>Ubicación · Año · Descripción corta del proyecto.</p></div>
+    </article>
+
+    <article class="project reverse reveal from-right">
+      <div class="img" style="--img:url(img/destacado2.jpg)"></div>
+      <div class="text"><h3>Edificio Central</h3><p>Ubicación · Año · Descripción corta del proyecto.</p></div>
+    </article>
+
+    <article class="project reveal from-left">
+      <div class="img" style="--img:url(img/destacado3.jpg)"></div>
+      <div class="text"><h3>Villa del Lago</h3><p>Ubicación · Año · Descripción corta del proyecto.</p></div>
+    </article>
+  </section>
+</main>
+
+<footer>© 2026 Arq. Christian Ivan Valdivia Lopez</footer>
+<script src="script.js"></script>
+</body>
+</html>
