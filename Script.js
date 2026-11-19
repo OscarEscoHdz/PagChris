@@ -1,3 +1,4 @@
+//Logica de la pagina
 // Menú lateral
 const drawer = document.getElementById('drawer');
 const overlay = document.getElementById('overlay');
